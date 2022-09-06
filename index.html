@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./index.css">
+    <title>Calculadora por Miguel Medina</title>
+</head>
+<body> 
+    <header>
+        <h1>CALCULADORA</h1>
+    </header>
+    <main>
+        <h2>Ingrese los valores</h2>
+        <form>
+            <h3>Cuadrado</h3>
+            <label for="Ingrese los valores">Ingrese el valor del lado del cuadrado</label>
+            <input type="number" id="inputCuadrado" min="0">
+            <button type="button" onclick="calcularPerimetro()">Calcular Perimetro</button>
+            <button type="button" onclick="calcularArea()">Calcular Area</button>
+            <p id="resultado"></p>
+        </form>
+        <form>
+            <h3>Circulo</h3>
+            <label for="Ingrese los valores">Ingrese el radio del circulo</label>
+            <input type="number" id="inputCirculo" min="0">
+            <button type="button" onclick="calcularDiametro()">Calcular Diametro</button>
+            <button type="button" onclick="calcularCircunferencia()">Calcular Circuferencia</button>
+            <button type="button" onclick="calcularCirculoArea()">Calcular Area</button>
+            <p id="resultado1"></p>
+        </form>
+        <form> 
+            <h3>Triangulo</h3>
+            <label for="Ingrese los valores">Ingrese los lados del triangulo</label>
+            <input type="number" id="lado1" min="0">
+            <input type="number" id="lado2" min="0">
+            <input type="number" id="base" min="0">
+            <button type="button" onclick="calcularPerimetroTriangulo()">Calcular Perimetro</button>
+            <p id="resultado2"></p>
+        <br/>
+            <label for="Ingrese los valores">Ingrese la base y altura del triangulo</label>
+            <input type="number" id="base2" min="0">
+            <input type="number" id="altura" min="0">
+            <button type="button" onclick="calcularAreaTriangulo()">Calcular Area</button>
+            <p id="resultado3"></p>
+        </form>
+        <form>
+            <h3>Calcula tu precio</h3>
+            <label for="Ingrese los valores">Ingrese el precio de su producto y el descuento</label>
+            <input type="number" id="precio" min="1">
+            <input type="number" id="descuento" min="1" max="100">
+            <button type="button" onclick="calcularPrecio()">Calcular Precio</button>
+            <p id="resultado4"></p>
+        </form>
+        <form>
+            <h3>Calcula tu taza de cambio</h3>
+             <label for="Ingrese los valores">Ingrese la taza a calcular</label>
+             <input type="number" id="tazaDeCambio" placeholder="taza de cambio">
+             <br/>
+             <br/>
+             <br/>
+            <label for="Ingrese los valores">Ingrese el monto a calcular</label>
+             <input type="number" id="bs" placeholder="cantidad en bolivares">
+             <button type="button" onclick="calculePrecio()">calcular precio</button>
+             <p id="resultado5"></p>
+             <br/>
+             <label for="Ingrese los valores">Ingrese el monto a calcular</label>
+             <input type="number" id="dolares" placeholder="cantidad en dolares">
+             <button type="button" onclick="calculePrecioA()">calcular precio</button>
+             <p id="resultado6"></p>
+        </form>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
