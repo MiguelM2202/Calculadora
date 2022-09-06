@@ -58,3 +58,38 @@ main form button:hover{
     color:  rgb(245, 153, 32);
     border-radius: 20px;
 }
+
+
+
+@media (min-width: 640px) {
+    .cuadradoContenedor {
+        display: flex;
+        flex-direction: column;
+        border: 1px red solid;
+        width: 100vw;
+    }
+   .cuadradoContenedor h3{
+    font-size:50px;
+   }
+   .cuadradoContenedor label{
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+   }
+   .cuadradoContenedor input{
+    width: 50vw;
+    height: 30px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+   }
+   .cuadradoContenedor div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
+   }
+   .cuadradoContenedor div button{
+    font-size: 25px;
+   }
+}
+  
